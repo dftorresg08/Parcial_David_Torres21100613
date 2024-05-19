@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EdadActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="50dp"
+        android:text="EDAD EN DIAS"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="50dp"
+        android:text="INGRESE LA FECHA DE NACIMIENTO"
+        app:layout_constraintBottom_toTopOf="@+id/etFecha"
+        app:layout_constraintStart_toStartOf="@+id/etFecha" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="245dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcularEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="39dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/etFecha"
+        app:layout_constraintTop_toBottomOf="@+id/etFecha" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:text="Su edad en dias es:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDias"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularEdad" />
+</androidx.constraintlayout.widget.ConstraintLayout>
